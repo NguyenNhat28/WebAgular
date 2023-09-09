@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1224px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #banner_content_baomat{
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        margin: 110px 0 0 0;
+        background: #dedede;
+        padding: 40px 0 100px 0;
+    }
+}

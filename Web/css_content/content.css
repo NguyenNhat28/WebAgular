@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@media only screen and (min-width: 1224px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #main_content{
+        width: 100%;
+    }
+    .product_top {
+        width: 300px;
+        height: 300px;
+    }
+    .content{
+        width: 1400px;
+        margin: 0px auto;
+        z-index: 2;
+        font-family: 'Open Sans', sans-serif;
+    }
+    ul.products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    ul.products li{
+        flex-basis: 25%;
+        padding: 0px 15px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        list-style: none;
+    }
+    ul.products li img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    ul.products li .product_info a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+    }
+    ul.products li .product_info a.product_cat{
+        font-size: 12px;
+        color: #9e9e9e;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+    ul.products li .product_info a.product_name{
+        font-size: 20px;
+        font-weight: bold;
+        color: #54A1AA;
+        margin-top: 10px;
+    }
+    ul.products li .product_info .product_price{
+        font-size: 16px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    ul.products .product_top .mua{
+        display: flex;
+        position: relative;
+    }
+    ul.products .product_top .mua .giohang{
+        position: absolute;
+        display: none;
+    }
+    ul.products .product_top .mua .heart_like{
+        position: absolute;
+        display: none;
+    }
+    ul.products .product_top .mua .giohang i{
+        font-size: 50px;
+        color: #bbd8f2;
+        cursor: pointer;
+    }
+    ul.products .product_top .mua .heart_like i{
+        font-size: 50px;
+        color: #bbd8f2;
+        cursor: pointer;
+    }
+    ul.products .product_top:hover .heart_like, ul.products .product_top:hover .giohang{
+        display: block;
+        transition: 1s;
+    }
+
+    /* được hover */
+
+    ul.products .product_top:hover .heart_like{
+        top: -150px;
+        right: 20%;
+    }
+    ul.products .product_top:hover .giohang{
+        top: -150px;
+        left: 20%;
+    }
+    ul.products .product_top:hover{
+        background: #fff;
+        opacity: 0.8;
+    }
+    ul.products .product_top .mua .heart_like:hover i,ul.products .product_top .mua .giohang:hover i{
+        transform: scale(0.9);
+    }
+    ul.products li .product_info a.product_name:hover{
+        color: red;
+    }
+
+
+
+}

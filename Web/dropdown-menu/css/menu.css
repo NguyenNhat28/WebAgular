@@ -1,0 +1,86 @@
+@media only screen and (min-width: 1224px) {
+    .contaiter {
+        max-width: 1500px;
+        margin: 0px auto;
+    }
+    #header {
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        z-index: 1999;
+    }
+    .logo {
+        padding-top: 10px;
+        width: 250px;
+        height: 104px;
+    }
+    nav {
+        display: flex;
+    }
+    .logo img {
+        width: 80%;
+        height: 90%;
+        object-fit: cover;
+        border-style: none;
+    }
+    #main-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 24px;
+        z-index: 199;
+    }
+    #main-menu li {
+        position: relative;
+    }
+    #main-menu li a {
+        color: black;
+        display: block;
+        padding: 18px 20px;
+        text-decoration: none;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    #main-menu ul.sub-menu {
+        position: absolute;
+        background-color: rgb(239 238 237);
+        width: 200px;
+        padding: 3px 0px;
+        list-style: none;
+        border: 1px solid #f0e9e9;
+        display: none;
+        z-index: 199;
+    }
+    #main-menu li:hover>ul.sub-menu {
+        display: block;
+    }
+    #main-menu ul.sub-menu a {
+        padding: 8px 15px;
+        border-bottom: 1px solid #c3b8b8;
+    }
+    #main-menu ul.sub-menu li:hover>a {
+        border-bottom: 1px solid #ffffff;
+    }
+    #main-menu ul.sub-menu a li:last-child a {
+        border: none;
+    }
+    /*Thiết lập border khi hover*/
+    #main-menu>li>a {
+        position: relative;
+    }
+    #main-menu>li:hover>a {
+        color: #14828D;
+        border-bottom: 5px solid #14828D;
+    }
+    #main-menu>li.has-child::after {
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        content: "\f107";
+        color: rgb(158, 145, 145);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 20px 0px;
+    }
+}

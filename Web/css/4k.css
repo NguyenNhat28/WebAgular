@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@media only screen and (max-width: 1500px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poopins";
+    }
+    /* header main */
+    #wrapper {
+        position: fixed;
+        width: 100%;
+        z-index: 1999;
+        top: 0%;
+    }
+    .card {
+        margin: 12px auto;
+        width: 200px;
+        height: 240px;
+        background: #272d48;
+        right: 199px;
+        padding: 17px;
+        border-radius: 15px;
+        position: absolute;
+        top: -60px;
+        left: 197px;
+        overflow: hidden;
+        z-index: 199;
+    }
+    #main-menu .sub-menu .card .card_heart {
+        left: 20px;
+        top: 15px;
+        font-size: 25px;
+        position: absolute;
+        cursor: pointer;
+        color: white;
+    }
+    #main-menu .sub-menu .card .card_cart a {
+        padding: 0;
+        border: none;
+        right: 20px;
+        top: 15px;
+        font-size: 25px;
+        position: absolute;
+        cursor: pointer;
+        color: white;
+    }
+    .card_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card_title,
+    .card_price {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        padding: 3px 0px;
+        transition: 0.5s;
+    }
+    .card_size,
+    .card_color {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .card_size span {
+        padding: 2px 5px;
+        background: #dedede;
+        color: black;
+        border-radius: 5px;
+        margin: 0 2px;
+        cursor: pointer;
+    }
+    .card_color span {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    .card_color_white {
+        background: white;
+        cursor: pointer;
+    }
+    .card_color_grey {
+        background: grey;
+        cursor: pointer;
+    }
+    .card_color_black {
+        background: black;
+        cursor: pointer;
+    }
+    .card_size h1,
+    .card_color h3 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        border: 1px solid black;
+        background: #000000;
+    }
+    .card_action {
+        align-items: center;
+    }
+    .card_action button {
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 17px;
+        background: #97f2f3;
+        color: #000000;
+        transition: 0.25s;
+    }
+    /*hover*/
+    .card_size span:hover {
+        transform: scale(0.9);
+    }
+    .card_action button:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+    }
+    .card_color_black:hover,
+    .card_color_grey:hover,
+    .card_color_white:hover {
+        transform: scale(0.9);
+    }
+    .card:hover .card_title,
+    .card:hover .card_price {
+        display: none;
+    }
+    .card_size {
+        margin-top: 20px;
+    }
+    .card_size,
+    .card_color,
+    .card_action {
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .card:hover .card_size,
+    .card:hover .card_color,
+    .card:hover .card_action {
+        visibility: visible;
+        opacity: 100;
+    }
+    .card:hover .card_size {
+        margin-top: -100px;
+    }
+    /*cart,user,phone*/
+    ul.form_icon {
+        color: black;
+        display: flex;
+        list-style: none;
+    }
+    .form_icon i {
+        color: #000000;
+    }
+    #icon_user_cart_phone {
+        position: absolute;
+        top: 42px;
+        right: 5%;
+    }
+    .form_icon li {
+        padding: 0px 35px;
+    }
+    p.NamePhone {
+        text-align: right;
+    }
+    /*box_search*/
+    .search-box {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        float: right;
+        margin-top: -65px;
+        margin-right: 585px;
+    }
+    .search_input {
+        border-top: none;
+        border-bottom: 1px solid black;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    .search-bot_btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        background: #fff;
+        transition: 0.5s ease;
+    }
+    .search-bot_btn:hover {
+        background: #ebc3c1;
+        transition: 0.5s ease;
+    }
+    .search-box.open {
+        width: 15%;
+    }
+    /* truy cap line tự động */
+    #up_video_container {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    .ngoai_noidung {
+        width: 1100px;
+        height: 875px;
+        margin: auto;
+    }
+    .noidung_noi {
+        background: #97f2f3;
+        width: 1100px;
+        height: 875px;
+        display: flex;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    .hinh_quangcao_1,
+    .hinh_quangcao_2,
+    .hinh_quangcao_3 {
+        margin-left: 0px;
+        width: 250px;
+        height: 250px;
+    }
+    .hinh_quangcao_1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hinh_quangcao_2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hinh_quangcao_3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hinh_quangcao_1 {
+        position: absolute;
+        top: 210px;
+        left: 244px;
+        z-index: 1;
+    }
+    .hinh_quangcao_2 {
+        position: absolute;
+        top: 270px;
+        left: 373px;
+        z-index: 2;
+    }
+    .hinh_quangcao_3 {
+        position: absolute;
+        top: 210px;
+        left: 472px;
+        z-index: 1;
+    }
+    .text_pr {
+        color: #538c51;
+        position: absolute;
+        top: 210px;
+        right: 300px;
+        width: 485px;
+        text-align: center;
+    }
+    .text_pr span {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: monospace;
+    }
+    .balo_tang_sale {
+        width: 500px;
+        height: 500px;
+        z-index: 1;
+        position: absolute;
+        top: 250px;
+        right: 300px;
+    }
+    .balo_tang_sale img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .gioithieu_sp {
+        position: absolute;
+        top: 560px;
+        left: 355px;
+    }
+    .gioithieu_sp li {
+        color: #0487d9;
+        list-style: none;
+        padding: 30px 0px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-shadow: 2px 2px 2px #fff;
+    }
+    .gioithieu_sp i {
+        margin: 0px 10px;
+    }
+    /* footer ở dưới */
+    #footer {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        border-top: 1px solid #000000;
+    }
+    .footer_bottom ul.all_footer {
+        display: flex;
+        list-style: none;
+        margin: auto;
+        width: 1260px;
+        margin-top: 55px;
+    }
+    .footer_bottom ul li {
+        width: 330px;
+        height: 340px;
+        box-sizing: border-box;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px 25px;
+    }
+    .footer_bottom ul li p {
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+    .footer_bottom li.all_ds {
+        width: 315px;
+        height: 340px;
+    }
+    .footer_bottom li.all_ds ul.danh_sach {
+        list-style: disc;
+        margin: 10px 0px 0px 30px;
+    }
+    .footer_bottom ul.danh_sach li {
+        font-size: 16px;
+        width: 200px;
+        height: auto;
+        font-weight: normal;
+        padding-top: 10px;
+    }
+    .footer_bottom ul.danh_sach li a {
+        color: #41839B;
+        text-decoration: none;
+    }
+    .footer_bottom ul.danh_sach li.chinhsach_baomat {
+        width: 200px;
+    }
+    .footer_bottom ul.all_footer li.hotro img {
+        width: 40px;
+    }
+    .footer_bottom ul.all_footer li.hotro a {
+        text-decoration: none;
+    }
+    .footer_bottom a.Footer_Cty_link {
+        text-decoration: none;
+        color: #000000;
+    }
+    .footer_bottom a.Footer_Cty_link p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .footer_bottom .From_where {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    /* hover đổi màu */
+    .footer_bottom ul.danh_sach li:hover a {
+        color: #716df2;
+    }
+    .footer_bottom ul.all_footer li.hotro img:hover {
+        transform: scale(0.9);
+    }
+    .footer_bottom a.Footer_Cty_link:hover p {
+        color: #0487d9;
+        border-bottom: 1px solid #0487d9;
+    }
+}
